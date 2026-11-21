@@ -1,12 +1,12 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
+:root {
   --color-cream: #F5F2EB;
   --color-cream-card: #EFECE3;
   --color-forest: #1C3524;
   --color-pink: #F275B4;
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-editorial), ui-serif, Georgia, serif;
 }
 
 .font-brand-display {
