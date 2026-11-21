@@ -9,10 +9,10 @@ const editorialSerif = Cormorant_Garamond({
   variable: "--font-editorial",
 });
 
-const bodySans = Plus_Jakarta_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
-  variable: "--font-sans",
+  variable: "--font-plus-jakarta",
 });
 
 export const metadata: Metadata = {
@@ -23,15 +23,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
-      className={`${editorialSerif.variable} ${bodySans.variable}`}
+      className={`${editorialSerif.variable} ${plusJakartaSans.variable}`}
     >
-      <body className="min-h-screen bg-[#F5F2EB] text-[#1C3524] antialiased selection:bg-[#F275B4] selection:text-[#1C3524]">
+      <body className="min-h-screen bg-[#F5F2EB] text-[#1C3524] font-sans antialiased selection:bg-[#F275B4] selection:text-[#1C3524]">
         {children}
       </body>
     </html>
