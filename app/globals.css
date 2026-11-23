@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
+/* Add a licensed webfont source here when the Boston Angel WOFF2 is available. */
+@font-face {
+  font-family: 'Boston Angel';
+  src: local('Boston Angel'), url('/fonts/boston-angel.woff2') format('woff2');
+  font-display: swap;
+}
+
 :root {
   --green: #1A3825;
   --cream: #F1EDE1;
@@ -1208,6 +1215,21 @@ em {
   -webkit-text-stroke: 1px var(--ink);
 }
 
+@media (hover: hover) {
+  .section .shop-heading:hover,
+  .page-intro .shop-heading:hover {
+    color: var(--green);
+    -webkit-text-stroke-color: var(--green);
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .section .shop-heading,
+  .page-intro .shop-heading {
+    transition: color 180ms ease, -webkit-text-stroke-color 180ms ease;
+  }
+}
+
 .page-intro .resources-heading {
   color: var(--green);
 }
@@ -1218,6 +1240,14 @@ em {
   font-size: 16px;
   line-height: 1.5;
   margin: 8px 0 0;
+}
+
+.section .shop-heading + .section-subtitle,
+.page-intro .shop-heading + .section-subtitle {
+  font-family: 'Boston Angel', 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(21px, 3vw, 29px);
+  line-height: 1.35;
 }
 
 .button-preview {
