@@ -93,3 +93,44 @@
     align-content: end;
   }
 }
+
+.banner {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.bannerWords {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 16px;
+  min-height: 65px;
+  padding-block: 16px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  line-height: 1.5;
+}
+
+.bannerWords span:nth-child(even) {
+  color: #e8a9c1;
+}
+
+.closingMark {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 700px) {
+  .bannerWords {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bannerWords span:nth-child(3) {
+    color: #e8a9c1;
+  }
+
+  .bannerWords span:nth-child(4) {
+    color: var(--cream);
+  }
+}
