@@ -1,0 +1,36 @@
+.entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 230px;
+  padding: clamp(24px, 6vw, 72px);
+  border: 1px solid var(--line);
+  background: var(--cream);
+}
+
+@media (hover: hover) {
+  .entry:hover h2 {
+    color: var(--green);
+    -webkit-text-stroke-color: var(--green);
+  }
+}
+
+.entry:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
+}
+
+.entry:focus-visible h2 {
+  color: var(--green);
+  -webkit-text-stroke-color: var(--green);
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green);
+  font-weight: 700;
+}
