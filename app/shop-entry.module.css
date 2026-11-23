@@ -95,8 +95,8 @@
 }
 
 .banner {
-  background: var(--green);
-  color: var(--cream);
+  background: var(--pink);
+  color: var(--green);
 }
 
 .bannerWords {
@@ -113,8 +113,20 @@
   line-height: 1.5;
 }
 
-.bannerWords span:nth-child(even) {
-  color: #e8a9c1;
+.bannerWords span {
+  position: relative;
+}
+
+.bannerWords span:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a42e68;
+  transform: translateY(-50%);
 }
 
 .closingMark {
@@ -126,11 +138,30 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .bannerWords span:nth-child(3) {
-    color: #e8a9c1;
+  .bannerWords span:nth-child(2)::after {
+    display: none;
   }
+}
 
-  .bannerWords span:nth-child(4) {
-    color: var(--cream);
-  }
+.closingHeading,
+.closingHeading.closingHeading em {
+  color: #fff;
+}
+
+.closingHeading strong {
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.heroArt {
+  border-radius: 22px;
+}
+
+.coverLink {
+  display: block;
+}
+
+.coverLink:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 6px;
 }
