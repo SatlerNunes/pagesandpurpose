@@ -30,7 +30,7 @@ export default function Shop() {
               <ArrowUpRight size={18} aria-hidden="true" />
             </div>
             <h2>The Blackout Recipe Book</h2>
-            <p>Creative meals from everyday cupboard essentials.</p>
+            <p>30 Cupboard Recipes, from everyday staples to a few less obvious tins</p>
             <p><strong className={styles.price}>£3.99</strong></p>
             <span className={styles.action}>View ebook →</span>
           </Link>
@@ -49,7 +49,7 @@ export default function Shop() {
               <ArrowUpRight size={18} aria-hidden="true" />
             </div>
             <h2>O Livro de Receitas do Apagão</h2>
-            <p>Receitas criativas com ingredientes que você já tem na despensa.</p>
+            <p>30 receitas com produtos de armário, do básico ao diferenciado</p>
             <p><strong className={styles.price}>£3.99</strong></p>
             <span className={styles.action}>Ver ebook →</span>
           </Link>
