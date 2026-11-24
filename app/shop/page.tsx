@@ -26,12 +26,30 @@ export default function Shop() {
               />
             </div>
             <div className={styles.label}>
-              <span>RECIPE EBOOK · PDF</span>
+              <span>ENGLISH · PDF</span>
               <ArrowUpRight size={18} aria-hidden="true" />
             </div>
             <h2>The Blackout Recipe Book</h2>
             <p>Creative meals from everyday cupboard essentials.</p>
             <span className={styles.action}>View ebook →</span>
+          </Link>
+
+          <Link href="/shop/livro-de-receitas-do-apagao" className={styles.product} lang="pt-BR">
+            <div className={styles.cover}>
+              <Image
+                src="/images/capa-livro-apagao.png"
+                alt="Capa de O Livro de Receitas do Apagão"
+                fill
+                sizes="(max-width: 720px) 70vw, 270px"
+              />
+            </div>
+            <div className={styles.label}>
+              <span>PORTUGUÊS · PDF</span>
+              <ArrowUpRight size={18} aria-hidden="true" />
+            </div>
+            <h2>O Livro de Receitas do Apagão</h2>
+            <p>Receitas criativas com ingredientes que você já tem na despensa.</p>
+            <span className={styles.action}>Ver ebook →</span>
           </Link>
 
           <section className={styles.soon}>

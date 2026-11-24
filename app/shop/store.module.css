@@ -124,3 +124,11 @@
   background: var(--paper);
   color: var(--green);
 }
+
+.catalogue .soon {
+  grid-column: 1 / -1;
+}
+
+.catalogue {
+  align-items: start;
+}
