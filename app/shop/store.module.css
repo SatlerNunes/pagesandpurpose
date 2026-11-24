@@ -117,3 +117,10 @@
     padding-top: 36px;
   }
 }
+
+:global(main):has(.store) + :global(.footer) {
+  --on-green-muted: var(--muted);
+  --green-hover: var(--line);
+  background: var(--paper);
+  color: var(--green);
+}
