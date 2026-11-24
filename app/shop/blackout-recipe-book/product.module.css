@@ -1,0 +1,16 @@
+:global(.detail-copy) h1 .titleLine {
+  color: inherit;
+}
+
+:global(.detail-copy) > p.tagline.tagline {
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-style: italic;
+}
+
+.downloadDescription {
+  max-width: 62ch;
+  margin: 20px 0 0;
+  line-height: 1.7;
+}
