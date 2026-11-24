@@ -20,7 +20,7 @@ export default function About() {
   return (
     <section className={`container ${styles.about}`}>
       <div className={styles.intro}>
-        <h1>The person behind <em>Pages &amp; Purpose</em></h1>
+        <h1><em>Pages &amp; Purpose</em>How it all started...</h1>
         <p>Hey, friend! I’m Barbara, the person behind Pages &amp; Purpose. I enjoy turning ideas into things people can use, from study guides to simple resources for everyday life. I made this little library so I could share those pages with you.</p>
       </div>
 
