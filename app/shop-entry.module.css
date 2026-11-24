@@ -229,3 +229,15 @@
   font-size: clamp(16px, 2vw, 23px);
   letter-spacing: 0;
 }
+
+.editionBadge {
+  margin-top: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--green);
+  font-size: clamp(14px, 1.5vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
