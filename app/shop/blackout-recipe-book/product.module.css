@@ -9,8 +9,17 @@
   font-style: italic;
 }
 
-.downloadDescription {
+.downloadDetails {
   max-width: 62ch;
   margin: 20px 0 0;
+  padding-inline-start: 24px;
   line-height: 1.7;
+}
+
+.downloadDetails li + li {
+  margin-top: 8px;
+}
+
+.downloadDetails li::marker {
+  color: var(--pink);
 }

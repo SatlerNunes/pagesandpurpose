@@ -20,5 +20,10 @@ export default function Product(){
     </button>
   )}
 </div>
-{!hasPreview && <p className="payment-note" id="preview-status">Preview coming soon</p>}<p className="payment-note">Digital product only · No physical book will be posted</p></div></div></section><section className="detail-more"><div className="container more-grid"><div><p className="eyebrow">WHAT'S INSIDE</p><h2>Long-life ingredients.<br/><em>Unexpected ideas.</em></h2></div><ul className="inside-list">{inside.map(x=><li key={x}><Check size={19}/>{x}</li>)}</ul></div></section><section className="container receive-section"><p className="eyebrow">WHAT YOU'LL RECEIVE</p><h2>One illustrated PDF</h2>
-<p className={styles.downloadDescription}>Download a single 40-page recipe book with creative recipes made from tins, jars and cupboard staples. Save it to read on your device or print it at home.</p></section></>}
+{!hasPreview && <p className="payment-note" id="preview-status">Preview coming soon</p>}<p className="payment-note">Digital product only · No physical book will be posted</p></div></div></section><section className="detail-more"><div className="container more-grid"><div><p className="eyebrow">WHAT'S INSIDE</p><h2>Long-life ingredients.<br/><em>Unexpected ideas.</em></h2></div><ul className="inside-list">{inside.map(x=><li key={x}><Check size={19}/>{x}</li>)}</ul></div></section><section className="container receive-section"><p className="eyebrow">WHAT YOU'LL RECEIVE</p><h2>Illustrated PDF download</h2>
+<ul className={styles.downloadDetails}>
+  <li>40 illustrated pages</li>
+  <li>Over 30 recipes for breakfast, lunch and dinner</li>
+  <li>Snack ideas for kids</li>
+  <li>Cupboard staples you might have overlooked when planning for a blackout</li>
+</ul></section></>}
