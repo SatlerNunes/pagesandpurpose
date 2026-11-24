@@ -19,4 +19,4 @@ export default function Home(){return <><section className="hero"><div className
     </span>
   </Link>
 </section>
-<section className="coming-section"><div className="container coming-inner"><span className="asterisk"><Image src="/images/mark.webp" width={34} height={28} alt="" className={styles.closingMark} /></span><p className="eyebrow">THIS IS JUST THE BEGINNING</p><h2 className={styles.closingHeading}>Pages written with a <strong>purpose</strong><br/><em>To be lived beyond the <strong>pages</strong></em></h2><p>Our library is growing. New ebooks, guides and study resources will be joining the shelves soon.</p></div></section></>}
+<section className="coming-section"><div className="container coming-inner"><span className="asterisk"><Image src="/images/mark.webp" width={34} height={28} alt="" className={styles.closingMark} /></span><p className="eyebrow">THIS IS JUST THE BEGINNING</p><h2 className={styles.closingHeading}>Written with a <strong>purpose</strong><br/><em>To be lived beyond the <strong>pages</strong></em></h2><p>Our library is growing. New ebooks, guides and study resources will be joining the shelves soon.</p></div></section></>}
