@@ -132,3 +132,14 @@
 .catalogue {
   align-items: start;
 }
+
+.price {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+}
