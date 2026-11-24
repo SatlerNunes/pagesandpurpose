@@ -1,0 +1,100 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 360px);
+  grid-template-areas:
+    'intro profile'
+    'story profile';
+  align-items: start;
+  gap: 0 clamp(40px, 8vw, 104px);
+  padding-block: clamp(52px, 8vw, 110px);
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.intro h1 {
+  margin-bottom: 28px;
+  color: var(--green);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(40px, 6vw, 82px);
+  line-height: 1.04;
+  letter-spacing: -.045em;
+}
+
+.intro h1 em {
+  display: block;
+}
+
+.intro p,
+.story p {
+  max-width: 65ch;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.story {
+  grid-area: story;
+}
+
+.story a {
+  margin-top: 8px;
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.portrait {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  background: var(--pink);
+}
+
+.portrait img {
+  object-fit: cover;
+}
+
+.socials {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--green);
+}
+
+.socials a:hover strong,
+.socials a:focus-visible strong {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.socials a span span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .about {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'intro' 'profile' 'story';
+    row-gap: 28px;
+  }
+
+  .profile {
+    width: min(100%, 360px);
+  }
+}
