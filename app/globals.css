@@ -1234,6 +1234,19 @@ em {
   color: var(--green);
 }
 
+@media (hover: hover) {
+  .page-intro .resources-heading:hover {
+    color: var(--pink);
+    -webkit-text-stroke: 1px var(--ink);
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .page-intro .resources-heading {
+    transition: color 180ms ease;
+  }
+}
+
 .section .section-subtitle,
 .page-intro .section-subtitle {
   color: var(--ink);
