@@ -51,11 +51,25 @@
   display: grid;
   place-items: center;
   aspect-ratio: 4 / 5;
-  background: var(--pink);
+  overflow: hidden;
+  border-radius: 48% 52% 45% 55% / 40% 44% 56% 60%;
+  background: var(--sand);
 }
 
 .portrait img {
   object-fit: cover;
+}
+
+@media (hover: hover) {
+  .portrait:hover img[alt="Barbara Nunes"] {
+    filter: grayscale(1);
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .portrait img[alt="Barbara Nunes"] {
+    transition: filter 220ms ease;
+  }
 }
 
 .socials {
