@@ -31,6 +31,7 @@ export default function Shop() {
             </div>
             <h2>The Blackout Recipe Book</h2>
             <p>Creative meals from everyday cupboard essentials.</p>
+            <p><strong>£3.99</strong></p>
             <span className={styles.action}>View ebook →</span>
           </Link>
 
@@ -49,6 +50,7 @@ export default function Shop() {
             </div>
             <h2>O Livro de Receitas do Apagão</h2>
             <p>Receitas criativas com ingredientes que você já tem na despensa.</p>
+            <p><strong>£3.99</strong></p>
             <span className={styles.action}>Ver ebook →</span>
           </Link>
 
