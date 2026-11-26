@@ -31,7 +31,7 @@ export default function Shop() {
               <ArrowUpRight size={18} aria-hidden="true" />
             </div>
             <h2>The Blackout Recipe Book</h2>
-            <p>30 Cupboard Recipes, from everyday staples to a few less obvious tins</p>
+            <p></p>
 
             <div style={{ margin: '16px 0' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '10px' }}>
@@ -73,7 +73,7 @@ export default function Shop() {
               <ArrowUpRight size={18} aria-hidden="true" />
             </div>
             <h2>O Livro de Receitas do Apagão</h2>
-            <p>30 receitas com produtos de armário, do básico ao diferenciado</p>
+            <p></p>
 
             <div style={{ margin: '16px 0' }}>
               <h3 style={{ fontSize: '1rem', marginBottom: '10px' }}>
