@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
@@ -31,6 +32,29 @@ export default function Shop() {
             </div>
             <h2>The Blackout Recipe Book</h2>
             <p>30 Cupboard Recipes, from everyday staples to a few less obvious tins</p>
+
+            <div style={{ margin: '16px 0' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '10px' }}>
+                What's inside the ebook?
+              </h3>
+              <ul style={{
+                listStyleType: 'disc',
+                paddingLeft: '20px',
+                fontSize: '0.9rem',
+                lineHeight: '1.6',
+                textAlign: 'left'
+              }}>
+                <li>44-page digital recipe book</li>
+                <li>30 recipes with accompanying images</li>
+                <li>Breakfast, lunch, dinner and snack recipes</li>
+                <li>Kid-friendly snack ideas</li>
+                <li>Vegetarian and vegan recipes</li>
+                <li>Cupboard staples you might not think to stock for a blackout</li>
+                <li>A page of extra tips for preparing and warming food during a blackout</li>
+                <li>Estimated nutritional values for each recipe</li>
+              </ul>
+            </div>
+
             <p><strong className={styles.price}>£3.99</strong></p>
             <span className={styles.action}>View ebook →</span>
           </Link>
@@ -50,6 +74,29 @@ export default function Shop() {
             </div>
             <h2>O Livro de Receitas do Apagão</h2>
             <p>30 receitas com produtos de armário, do básico ao diferenciado</p>
+
+            <div style={{ margin: '16px 0' }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '10px' }}>
+                O que você encontra neste e-book?
+              </h3>
+              <ul style={{
+                listStyleType: 'disc',
+                paddingLeft: '20px',
+                fontSize: '0.9rem',
+                lineHeight: '1.6',
+                textAlign: 'left'
+              }}>
+                <li>Livro digital de receitas com 44 páginas</li>
+                <li>30 receitas acompanhadas de imagens</li>
+                <li>Receitas para café da manhã, almoço, jantar e lanches</li>
+                <li>Ideias de lanches para crianças</li>
+                <li>Receitas vegetarianas e veganas</li>
+                <li>Alimentos essenciais que você talvez não pense em estocar para um apagão</li>
+                <li>Uma página com dicas extras para preparar e aquecer alimentos durante um apagão</li>
+                <li>Valores nutricionais estimados para cada receita</li>
+              </ul>
+            </div>
+
             <p><strong className={styles.price}>£3.99</strong></p>
             <span className={styles.action}>Ver ebook →</span>
           </Link>
